@@ -1,0 +1,10 @@
+.Host {    
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    width: 820px;
+}
+
+.VisitorList {
+    width: 80%;
+}

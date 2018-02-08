@@ -1,0 +1,8 @@
+.TableFoot {
+    display       : flex;
+    flex-direction: column;
+    color         : rgb(117, 117, 117);
+    font-size     : .75rem;
+    font-weight   : normal;
+    text-align    : right;
+}

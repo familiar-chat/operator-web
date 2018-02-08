@@ -1,0 +1,78 @@
+.Host {
+    height: 90vh;
+}
+
+.DialogForm {
+    display       : flex;
+    flex-direction: column;
+    height        : 100%;
+    overflow      : auto;
+}
+
+.Name {
+    margin: 0 0 14px 0;
+}
+
+.DialogBody {
+    height: 100%;
+}
+
+.DialogBody > :nth-child(1) {
+    align-items: center;
+    display    : flex;
+}
+
+.DialogBody > :nth-child(1) > :nth-child(1) {
+    flex-grow: 1
+}
+
+.DialogBody > :nth-child(1) > :nth-child(2) {
+    align-items    : center;
+    display        : flex;
+    width          : 120px;
+    justify-content: space-between;
+    margin         : 0 12px;
+}
+
+.DialogBody > :nth-child(2) {
+    display       : flex;
+    height        : 100%;
+}
+
+.DialogBody > :nth-child(2) > div {
+    padding: 0 10px;
+    width  : 400px;
+}
+
+.DialogBody > :nth-child(2) > div:nth-child(2) {
+    border-left: 1px solid #ccc;
+}
+
+.Condition > :nth-child(n+1) {
+    padding: 12px 0;
+}
+
+.ConditionOperation {
+    display: flex;
+    align-items: center;
+}
+
+.ConditionOperation > :nth-last-child(1),
+.ConditionOperation > :nth-last-child(2) {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0 4px;
+}
+
+.Title {
+    align-items: center;
+    color: #333;
+    font-size: 18px;
+}
+
+.Title > :nth-child(1) {
+    display: flex;
+    margin : 0 12px;
+}

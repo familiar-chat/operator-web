@@ -1,0 +1,19 @@
+.Host {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 100%;
+    margin         : 2px 0;
+}
+
+.Text {
+    font-size      : 12px;
+    color          : #555;
+    display        : inline-flex;
+    align-items    : center;
+    justify-content: center;
+    width          : fit-content;
+    background     : rgba(0,0,0,0.1);
+    border-radius  : 1rem;
+    padding        : 0.1rem 1rem;
+}

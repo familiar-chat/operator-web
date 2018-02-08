@@ -1,0 +1,151 @@
+.Host {
+    background-color : #FFF;
+    color            : rgba(0, 0, 0, .87);
+    font-size        : 15px;
+    transition       : all .3s ease-out;
+    border-top       : 0 solid rgba(0, 0, 0, .12);
+    margin-left      : 12px;
+    margin-right     : 12px;
+    min-width        : 80%;    
+}
+
+.Host:first-child {
+    border-top-left-radius  : 2px;
+    border-top-right-radius : 2px;
+}
+
+.Host:last-child {
+    border-bottom-left-radius  : 2px;
+    border-bottom-right-radius : 2px;
+}
+
+.Host.Selected {
+    width         : 100%;
+    border-radius : 2px;
+}
+
+.Host.Selected:not(:first-child) {
+    margin-top   : 16px;
+    margin-left  : 0;
+    margin-right : 0;
+}
+
+.Host.Selected:not(:last-child) {
+    margin-bottom : 16px;
+    margin-left   : 0;
+    margin-right  : 0;
+}
+
+.Host:not(.Selected) + .Host:not(.Selected) {
+    border-top-width : 1px;
+}
+
+.Host.Selected > :nth-child(1) {
+    min-height       : 72px;
+    background-color : #0277BD;
+    position         : relative;
+}
+
+.Host.Selected > :first-child:after {
+    background-color : inherit;
+    bottom           : -40px;
+    content          : " ";
+    font-size        : 0;
+    height           : 40px;
+    left             : 0;
+    position         : absolute;
+    right            : 0;
+}
+
+.Host > :nth-child(1) {
+    display     : flex;
+    align-items : center;
+    min-height  : 48px;
+    height      : 48px;    
+    transition  : all .3s ease-out;
+    z-index     : 0;
+}
+
+.Host:not(.Disabled) > :nth-child(1) {
+    cursor : pointer;
+}
+
+.Host:not(.Disabled):not(.Selected):hover > :nth-child(1) {
+    background-color : rgba(0, 0, 0, .05);
+}
+
+.Label {
+    min-width: 10rem;
+    white-space : nowrap;
+    transition  : all .3s ease-out;
+}
+
+.Host.Selected .Label{
+    font-size : 24px;
+    color     : white;
+    padding   : 0 28px;
+}
+
+.Host > :first-child > :not(:nth-child(2)) {
+    padding : 0 16px;
+}
+
+.Host > :nth-child(2) {
+    overflow   : hidden;
+    transition : all .3s ease-out;
+    z-index    : 1;
+}
+
+.Host > :nth-child(2) > * {
+    padding-left   : 12px;
+    padding-right  : 12px;
+    padding-bottom : 12px;
+}
+
+.VisitorInformation {
+    display       : flex;
+    overflow      : hidden;
+    flex-grow     : 1;
+    font-size     : 12px;
+    color         : black;
+    text-overflow : ellipsis;
+    white-space   : nowrap;
+}
+
+.VisitorInformation > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.Host.Selected .VisitorInformation {
+    color          : white;
+    font-size      : 18px;
+    justify-content: space-evenly;
+}
+
+.Host .VisitorInformation {
+    font-size: 0.6rem;
+    display  : flex;
+}
+
+.Host:not(.Selected) .VisitorInformation span{
+    color    : #333;
+}
+
+.Host.Selected .VisitorInformation > * {
+    color : white;
+}
+
+.VisitorInformation > :nth-child(1) {
+    min-width: 14rem;
+}
+
+.VisitorInformation > :nth-child(2) {
+    flex-grow: 1;
+    min-width: 10rem;
+}
+
+.VisitorInformation > :nth-child(n+3) {
+    margin    : 0 1.3rem;
+    text-align: center;
+}

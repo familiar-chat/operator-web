@@ -1,0 +1,24 @@
+.Host {
+    align-items: flex-end;
+    display    : flex;
+    margin     : 4px 12px;
+}
+
+.Host > :first-child {
+    color    : #555;
+    font-size: 0.8rem;
+    width    : 30%;
+}
+
+.Host > :last-child {
+    align-items: center;
+    display    : flex;
+}
+
+.Host > :last-child > :first-child {
+    font-size: 1.3rem;
+    padding  : 0 0.5rem;
+}
+
+.Host > :last-child > :last-child {
+}

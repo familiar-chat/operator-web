@@ -1,0 +1,61 @@
+.Host {
+    display        : flex;
+    flex-direction : column;
+    min-width      : 280px;
+    max-width      : 80%;
+    width          : 80%;
+    min-height     : 400px;
+    max-height     : 80%;
+    height         : 80%;
+}
+
+.TitleBar {
+    min-height       : 40px;
+    height           : 40px;
+    min-width        : 100%;
+    width            : 100%;
+    text-align       : center;
+    color            : white;
+    font-size        : 14px;
+    background-color : #424242;
+    display          : flex;
+    align-items      : center;
+    justify-content  : space-between;
+}
+
+.Title {
+    margin-left : 12px;
+    color       : white;
+    flex-grow   : 1;
+    text-align  : left;
+}
+
+.IconToggle > :nth-child(1) {
+    height     : 36px;
+    cursor     : pointer;
+    font-size  : 20px;
+    min-height : 12px;
+    color      : #ddd;
+}
+
+.IconToggle:hover > :nth-child(1) {
+    color : white;
+}
+
+.DialogBody {
+    display   : flex;
+    min-width : 100%;
+    width     : 100%;
+    height    : 100%;
+    flex-grow : 1;
+}
+
+.DialogBody > :first-child {
+    flex-grow: 1;
+}
+
+.DialogBody > :last-child {
+    min-width: 280px;
+    width    : 30%;
+    max-width: 30%;
+}

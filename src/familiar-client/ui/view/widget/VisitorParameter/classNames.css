@@ -1,0 +1,8 @@
+.Host {
+  display         : flex;
+  justify-content : space-between;
+}
+
+.Host > * {
+  flex-grow : 1;
+}

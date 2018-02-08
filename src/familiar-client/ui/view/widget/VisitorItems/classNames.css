@@ -1,0 +1,21 @@
+.Host {
+    display: flex;
+    flex-direction: column;
+    background-color:  #fafbfd;
+}
+
+.Host > :first-child {
+    flex-grow: 1;
+}
+
+.Host > :last-child {
+    margin: 6px;
+}
+
+.Border {
+    display    : inline-block;
+    border-top : 1px solid rgb(188, 188, 188);
+    margin     : 8px 30px;
+    height     : 1px;
+    min-width  : 80%;
+}

@@ -1,0 +1,10 @@
+.Host {
+    color           : #2196F3;
+    text-decoration : none;
+    outline-width   : 0;
+    cursor          : pointer;
+}
+
+.Host:hover {
+    text-decoration : none;
+}

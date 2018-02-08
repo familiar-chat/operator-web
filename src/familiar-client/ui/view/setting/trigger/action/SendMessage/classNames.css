@@ -1,0 +1,32 @@
+.Host {
+    background-color: #fafbfd;
+    margin          : 4px;
+}
+
+.Host > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Host > :nth-child(2) {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Host > :nth-child(1) > :nth-child(1) {
+    background-color: #29B6F6;
+    color: white;
+    border-radius: 0 2px 2px 0 ;
+    padding: 0 12px;
+    white-space: nowrap;
+    width: min-content;
+}
+
+
+.Host > :nth-child(1) > hr {
+    width: 100%;
+    border: 1px solid #E1F5FE;
+}

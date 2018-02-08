@@ -1,0 +1,24 @@
+.Host {
+    display       : flex;
+    align-items   : center;
+    border-bottom : 1px solid rgb(188, 188, 188);
+    width         : 100%;
+}
+
+thead > .Host {
+    max-height: 42px;
+    height    : 42px;
+    min-height: 42px;
+}
+
+tbody > .Host {
+    max-height: 48px;
+    height    : 48px;
+    min-height: 48px;
+}
+
+tfoot > .Host {
+    max-height: 56px;
+    height    : 56px;
+    min-height: 56px;
+}

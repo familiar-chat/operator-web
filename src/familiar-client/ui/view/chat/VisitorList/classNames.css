@@ -1,0 +1,24 @@
+
+.Toolbar {
+    display         : flex;
+    background-color: #f0f0f0;
+    min-height      : 56px;
+    max-height      : 56px;
+    align-items     : center;
+    padding         : 0 12px;
+}
+
+.Toolbar > :first-child {
+    margin: 0 8px;
+}
+
+.Toolbar > :last-child {
+    align-items: center;
+    margin-left: 32px;
+    font-size  : 1rem;
+}
+
+.DropDownButton {
+    background-color: #f8f8f8;    
+    max-height      : 0;
+}

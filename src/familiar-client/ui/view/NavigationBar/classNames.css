@@ -1,0 +1,106 @@
+.Host {
+    align-items     : stretch;
+    background-color: #f2f2f2;
+    display         : flex;
+    flex-direction  : column;
+    height          : 100%;
+    position        : relative;
+    min-width       : 240px;
+}
+
+.Host > :nth-child(1) {
+    max-height : min-content;
+    flex-grow  : 0;
+    overflow   : auto;
+}
+
+.Host > :nth-child(3) {
+    height       : min-content;
+    -webkit-flex : 1 0 auto;
+    -ms-flex     : 1 0 auto;
+    flex         : 1 0 auto;
+}
+
+.Link {
+    -decoration     : none;
+    align-items     : center;
+    border-left     : 3px solid white;
+    display         : flex;
+    line-height     : 52px;
+    min-height      : 52px;
+    padding-right   : 0 32px; 
+    width           : 100%;
+}
+
+.Link:hover {
+    border-left : 3px solid rgb(117, 117, 117);
+}
+
+.ListItem {
+    font-size : 16px;
+}
+
+.Text {
+    color       : black;
+    width       : 100%;
+    margin      : 0 1rem;
+    flex-grow   : 1;
+    font-size   : 1rem;
+}
+
+.Icon {
+    margin      : 0 0.5rem;
+    font-size   : 1.4rem;
+    font-weight : normal;
+    min-width   : 38px;
+    min-height  : 48px;
+    line-height : 48px;
+    text-align  : center;
+    transition  : .3s all ease-out
+}
+
+.Close {
+    transform: rotateZ(180deg);
+}
+
+.OpenableList {
+    transition: .3s all ease-out;
+}
+
+.Hidden {
+    overflow  : hidden;
+    height    : 0;
+}
+
+.Border {
+    display    : inline-block;
+    border-top : 1px solid rgb(188, 188, 188);
+    margin     : 8px 30px;
+    height     : 1px;
+    min-width  : 80%;
+}
+
+.Selected {
+    font-weight      : bold;
+    border-left-color: #0078d7;
+    background-color : rgba(0, 0, 0, .05);
+}
+
+.UnSelected {
+    color            : rgb(117, 117, 117);
+    border-left-color: rgba(0, 0, 0, 0);
+}
+
+.Selected > :nth-child(1) {
+    color: #4285f4;
+}
+
+.UnSelected > :nth-child(1) {
+    color: #757575;
+}
+
+@media (max-width: 767px) {
+    .Host {
+        position: fixed;
+    }        
+}    

@@ -1,0 +1,53 @@
+.Host {
+    height                  : 100%;
+    width                   : 100%;
+    display                 : flex;
+    flex-direction          : column;
+    background-color        : white;
+    border-top-left-radius  : 5px;
+    border-top-right-radius : 5px;
+}
+
+.TitleBar {
+    height                  : 40px;
+    min-height              : 40px;
+    min-width               : 200px;
+    text-align              : center;
+    color                   : white;
+    font-size               : 14px;
+    background-color        : #424242;
+    display                 : flex;
+    align-items             : center;
+    justify-content         : space-between;
+    border-top-left-radius  : 5px;
+    border-top-right-radius : 5px;
+}
+
+.Title {
+    margin-left : 12px;
+    color       : white;
+    flex-grow   : 1;
+    text-align  : left;
+}
+
+.IconToggle > :nth-child(1) {
+    cursor     : pointer;
+    height     : 36px;
+    font-size  : 20px;
+    min-height : 12px;
+    color      : #ddd;
+}
+
+.IconToggle:hover > :nth-child(1) {
+    color : white;
+}
+
+.ChatContent {
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .TitleBar > :nth-child(2) {
+        display : none;
+    }
+}

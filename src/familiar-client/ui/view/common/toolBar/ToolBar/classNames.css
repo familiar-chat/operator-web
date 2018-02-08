@@ -1,0 +1,8 @@
+.Host {
+    display        : flex;
+    align-items    : stretch;
+    justify-content: space-between;
+    width          : 100%;
+    min-height     : max-content;
+    font-size      : .875rem;
+}

@@ -1,0 +1,21 @@
+.Host {
+    margin         : 8px;
+    display        : flex;
+    align-items    : flex-end;
+    position       : relative;
+    justify-content: flex-end;
+}
+
+.Image {
+    background-color: #E3F2FD;
+    border-radius: 14px;
+    cursor      : pointer;
+}
+.DialogBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.DialogBody > :nth-child(2){
+    display: flex;
+}

@@ -1,0 +1,6 @@
+[submodule "src/api-common"]
+	path = src/api-common
+	url = https://github.com/familiar-chat/api-common
+[submodule "src/react-material"]
+	path = src/react-material
+	url = https://github.com/familiar-chat/react-material

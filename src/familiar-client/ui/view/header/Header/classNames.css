@@ -1,0 +1,132 @@
+ .Host {
+    background-color : #2196F3;
+    color            : #FFF;
+} 
+
+.AppBarLogo {
+    margin              : 8px;
+    width               : 120px;
+    height              : 40px;
+    background-image    : url(/img/familiar-logo.svg);
+    background-size     : contain;
+    background-position : center;
+    background-repeat   : no-repeat;
+}
+
+.LeftSide,
+.RightSide {
+    display     : flex;
+    flex-grow   : 1;
+    align-items : center;
+}
+
+.RightSide {
+    margin-right    : 12px;
+    justify-content : flex-end;
+}
+
+.IconContainer {
+    position    : relative;
+    margin-left : 12px;
+    cursor      : pointer;
+}
+
+.IconContainer > * {
+    border-radius : 18px;
+    display       : inline-block;
+    height        : 24px;
+    min-width     : 24px;
+    line-height   : 24px;
+    font-size     : 20px;
+    text-align    : center;
+}
+
+.IconContainer > :nth-child(n+2) {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+}
+
+.OperatorImg {
+    border        : solid 1px #28a5a5;
+    margin        : 4px;
+    width         : 80px;
+    height        : 80px;
+    min-width     : 80px;
+    min-height    : 80px;
+    max-width     : 80px;
+    max-height    : 80px;
+    position      : relative;
+    border-radius : 50%;
+    overflow      : hidden;
+}
+
+.Popup {
+    display          : flex;
+    flex-direction   : column;
+    top              : 58px;
+    right            : 12px;
+    background-color : white;
+    max-width        : min-content;
+}
+
+.Profile {
+    margin           : 2px;
+    background-color : white;
+    display          : flex;
+    align-items      : stretch;
+}
+
+.Profile > :nth-child(2) {
+    margin         : 0 8px;
+    color          : black;
+    display        : flex;
+    flex-direction : column;
+    max-width      : min-content;
+}
+
+.Profile > :nth-child(2) > :nth-child(-n+3) {
+    font-size    : 0.8rem;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+
+.ProfileName {
+    font-weight : bold;
+}
+
+.DehazeIcon {
+    color: white;
+    font-size: 28px;
+}
+
+.Operate {
+    position : relative;
+    max-width: max-content;
+}
+
+.Operate > :nth-child(1) {
+    display    : flex;
+    align-items: center;
+}
+
+.SelectButton {
+    text-align      : center;
+    text-decoration : none;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    cursor          : pointer;
+    white-space     : nowrap;
+    overflow        : hidden;
+}
+
+.Icon {
+    margin : 4px;
+    color  : rgba(0, 0, 0, .2);
+}
+
+*:hover > .Icon {
+    color : black;
+}

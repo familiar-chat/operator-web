@@ -1,0 +1,14 @@
+.HeaderBHostutton {
+    text-align      : center;
+    color           : white;
+    text-decoration : none;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+    min-height      : 44px;
+}
+
+.Host:hover {
+    background-color : rgba(0, 0, 0, 0.20);
+}

@@ -1,0 +1,109 @@
+.Content {
+    padding-top   : 0.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom : 1px #aaa solid;
+    min-width     : 100%;
+    min-height    : 100%;
+}
+
+.LeftContent,
+.RightContent {
+    flex-direction : column;
+    width          : 160px;
+    justify-content: space-between;
+}
+
+.RightContent {
+    align-items: flex-end;
+}
+
+.LeftContent {
+    flex-grow: 1;
+}
+
+.LeftContent > :last-child {
+    font-size: 0.9rem
+}
+
+.RightContent > :last-child {
+    width          : 100%;
+}
+
+.RightContent > :last-child > * {
+    align-items    : center;
+    margin         : 0 6px;
+}
+
+.RightContent > :last-child > * > :first-child {
+    margin-right: 4px;
+    font-size   : 1rem;
+}
+
+.RightContent > :last-child > * > :last-child {
+    font-size    : 0.8rem;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+}
+
+.VisitCountIcon {
+    color: rgb(109, 76, 65);
+}
+
+.MessageCountIcon {
+    color: rgb(2, 136, 209);
+}
+
+.DurationTimeIcon {
+    color: rgb(245, 124, 0);
+}
+
+.Name {
+    color    : #333;
+    font-size: 1.4rem;
+    margin   : 0 1rem 0 0;
+}
+
+.Pathname {    
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.LastMessageDate {
+    font-size: 0.8rem;
+}
+
+.SenderName {
+    margin-right: 0.4rem;
+    white-space : nowrap;
+    color       : #777;
+}
+
+.MessageText {
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+    color        : #555
+}
+
+.Badge {
+    max-width       : 1.5rem;
+    max-height      : 1.5rem;
+    min-width       : 1.5rem;
+    min-height      : 1.5rem;
+    color           : white;
+    display         : inline-flex;
+    align-items     : center;
+    justify-content : center;
+    border-radius   : 50%;
+}
+
+.NumberBadge {
+    background-color: #1976D2;
+    font-size       : 1rem;
+}
+
+.AlreadyReadBadge {
+    background-color: #64B5F6;
+    font-size       : 1.4rem;
+}

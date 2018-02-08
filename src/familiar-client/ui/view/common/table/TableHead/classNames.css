@@ -1,0 +1,8 @@
+.Host {
+    height          : auto;
+    display         : block;
+    background-color: #f5f5f5;
+    color           : rgb(117, 117, 117);
+    font-size       : .75rem;
+    font-weight     : normal;
+}

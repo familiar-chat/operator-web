@@ -1,0 +1,74 @@
+.Host > * {
+    display       : inline-block;
+    overflow      : hidden;
+    text-overflow : ellipsis;
+    white-space   : nowrap;
+}
+
+.Host > :nth-child(n + 3) {
+    overflow  : hidden;
+    flex-grow : 1;
+}
+
+.Host > :nth-child(n + 2) {
+    margin-left : 8px;
+}
+
+.Host > :nth-child(1) {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    min-width       : 60px;
+    max-width       : 60px;
+    width           : 60px;
+}
+
+.Host > :nth-child(2) {
+    text-align      : center;
+    min-width       : 60px;
+    max-width       : 60px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}
+
+.Host > :nth-child(3) {
+    min-width : 80px;
+    max-width : 200px;
+    width     : 100px;
+}
+
+.Host > :nth-child(4) {
+    min-width : 200px;
+    width     : 250px;
+}
+
+.Host > :nth-child(5) {
+    min-width : 200px;
+    width     : 250px;
+}
+
+.Avatar {
+    min-width  : 40px;
+    min-height : 40px;
+    width      : 40px;
+    height     : 40px;
+}
+
+@media (max-width: 767px) {
+    .Host > :nth-child(1){
+        min-width : 20px;
+        max-width : 20px;
+        width     : 20px;
+    }
+
+    .Host > :nth-child(2) {
+        min-width : 60px;
+        max-width : 60px;
+        width     : 60px;
+    }
+
+    .Host > :nth-child(4) {
+        display : none;
+    }
+}

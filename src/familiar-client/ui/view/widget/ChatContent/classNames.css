@@ -1,0 +1,10 @@
+.Host {
+    display        : flex;
+    flex-direction : column;
+    z-index        : 0;
+    min-width      : 300px;
+}
+
+.Host > :nth-child(1) {
+    flex-grow      : 1;
+}

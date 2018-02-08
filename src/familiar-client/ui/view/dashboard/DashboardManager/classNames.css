@@ -1,0 +1,9 @@
+.Host {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Host > :first-child {
+    display: flex;
+}

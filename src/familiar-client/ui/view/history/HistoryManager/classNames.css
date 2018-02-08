@@ -1,0 +1,42 @@
+.Host {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.Host > :nth-child(1) {
+    flex-grow     : 1;
+    min-width     : 90%;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin        : 18px;
+    height        : 100%;
+    min-height    : min-content;
+}
+
+.PanelContent {
+    display          : flex;
+    height           : 360px;
+    max-height       : 420px;
+    background-color : #eee;
+    z-index          : 1;
+}
+
+.PanelContent > * {
+    margin           : 8px;
+    background-color : white;
+    z-index          : 1;
+}
+
+.PanelContent > :nth-child(1) {
+    width         : 320px;
+    overflow      : auto;
+    border-right  : solid 1px #ddd;
+    border-bottom : solid 1px #ddd;
+}
+
+.PanelContent > :nth-child(2) {
+    flex-grow      : 1;
+    display        : flex;
+}

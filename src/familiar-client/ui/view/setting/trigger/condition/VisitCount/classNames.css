@@ -1,0 +1,64 @@
+.Host {
+    background-color: #fafbfd;
+    margin          : 4px;
+}
+
+.Host > :nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Host > :nth-child(1) {
+    flex-grow: 1;
+}
+
+.Host > :nth-child(1) > :nth-child(1) {
+    background-color: #66BB6A;
+    color: white;
+    border-radius: 0 2px 2px 0 ;
+    padding: 0 12px;
+    white-space: nowrap;
+    width: min-content;
+}
+
+.Host > :nth-child(2) {
+    padding: 0 12px;
+}
+
+.Host > :nth-child(1) > hr {
+    width: 100%;
+    border: 1px solid #E8F5E9;
+}
+
+.Selector {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Selector > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin: 0 4px;
+}
+
+.ValueContent > :nth-child(1) {
+    display: flex;
+    align-items: flex-end;
+}
+
+.ValueContent:first-child > :first-child > :nth-child(2) {
+    display: none;
+}
+
+.ValueContent > :first-child > :first-child {
+    flex-grow: 1;
+}
+
+.AddValueButton {
+    display: flex;
+}

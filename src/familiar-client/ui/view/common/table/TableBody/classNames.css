@@ -1,0 +1,8 @@
+.Host {
+    display       : flex;
+    flex-direction: column;
+    font-size     : .8125rem;
+    font-weight   : normal;
+    text-align    : left;
+    min-height    : min-content;
+}

@@ -1,0 +1,48 @@
+.Host {
+  display      : flex;
+  margin       : 8px 16px 18px 16px;
+  align-items  : center;
+  text-overflow: ellipsis;
+}
+
+.Host > h1 {
+  display                   : inline-block;
+  vertical-align            : bottom;
+  white-space               : nowrap;
+  position                  : relative;
+  animation-name            : SlideIn;
+  animation-duration        : .4s;
+  animation-timing-function : cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.Host > p {
+  display                   : inline-block;
+  vertical-align            : bottom;
+  margin-left               : 8px;
+  position                  : relative;
+  animation-name            : FadeIn;
+  animation-duration        : .5s;
+  animation-timing-function : cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+
+@keyframes SlideIn {
+    from {
+        left : -100%;
+    }
+    to {
+        left : 0%;
+    }
+}
+
+
+@keyframes FadeIn {
+    from {
+        bottom : -10%;
+        opacity: 0;
+    }
+    to {
+        bottom : 0%;
+        opacity: 1;
+    }
+}

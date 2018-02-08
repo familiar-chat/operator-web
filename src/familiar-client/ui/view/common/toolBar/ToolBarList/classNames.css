@@ -1,0 +1,20 @@
+.Host {
+    display        : flex;
+    align-items    : stretch;
+    flex-grow      : 1;
+    padding        : 0 50px 0 50px;
+}
+
+.Left {
+    justify-content : flex-start;
+}
+
+.Right {
+    justify-content : flex-end;
+}
+
+@media (max-width: 767px) {
+    .Host {
+        padding: 0 2px 0 2px;
+    }
+}

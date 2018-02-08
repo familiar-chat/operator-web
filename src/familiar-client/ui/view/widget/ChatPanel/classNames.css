@@ -1,0 +1,56 @@
+.Host {
+    height   : auto;
+    margin   : 0 4px 8px 4px;
+    color    : rgba(0, 0, 0, .38);
+    position : relative;
+}
+
+.Host > :first-child {
+    display: flex;
+}
+
+.Host > :first-child > :first-child {
+    margin: 4px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Host > :first-child > :first-child > * {
+    font-size: 1.4rem;
+    min-width: 30px;
+    min-height: 30px;
+}
+
+.Host > :first-child > :last-child{
+    overflow : auto;
+    flex-grow: 1;
+    font-size: 0.7rem;
+    max-width: 100%;
+    margin   : 8px 0 8px 0;
+}
+
+.List {
+    overflow: auto;
+    width   : 100%;
+}
+
+.List > * {
+    min-width      : min-content;
+    width          : min-content;
+    cursor         : pointer;
+    display        : inline-block;
+    text-align     : center;
+    white-space    : pre;
+    font-size      : 0.9rem;
+    border-radius  : 0.7rem;
+    border         : 1px solid #64B5F6;
+    color          : #0D47A1;
+    margin         : 0 4px;
+    transition     : all .3s ease-out;
+    padding        : 0 1rem;
+}
+
+.List > *:hover {
+    background-color: rgba(0,0,0,.05);
+}

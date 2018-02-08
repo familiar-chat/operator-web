@@ -1,0 +1,19 @@
+.Host {
+    margin  : 0 2px;
+    padding : 0 12px;
+    cursor  : pointer;
+}
+
+.Host:hover {
+    background-color : rgba(0, 0, 0, .05);
+}
+
+.Host:hover > .ToolBarIcon {
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    .Host {
+        padding : 0;
+    }
+}

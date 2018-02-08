@@ -1,0 +1,7 @@
+.Content {
+    margin: auto 3%;
+}
+
+.Content > p > span {
+    color: #1B5E20;
+}

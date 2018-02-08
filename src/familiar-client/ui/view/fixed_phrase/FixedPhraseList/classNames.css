@@ -1,0 +1,55 @@
+.Host {
+    overflow: auto;
+}
+
+.Row > * {
+    display      : inline-block;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+    margin-right : 24px;
+}
+
+.Row > :nth-child(n + 3) {
+    overflow  : hidden;
+    flex-grow : 1;
+    text-align: left;
+}
+
+.Row > :nth-child(1) {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    min-width      : 1.125rem;
+    max-width      : 1.125rem;
+    width          : 1.125rem;
+    margin-left    : 24px;
+}
+
+.Row > :nth-child(2) {
+    min-width: 42px;
+    max-width: 42px;
+    width    : 42px;
+}
+
+.Row > :nth-child(3) {
+    min-width: 70px;
+    width    : 70px;
+}
+
+.Row > :nth-child(4) {
+    min-width: 100px;
+    width    : 200px;
+}
+
+.Row > :nth-child(5) {
+    min-width: 40px;
+    max-width: 40px;
+    width    : 40px;
+}
+
+@media (max-width: 767px) {
+    .Row > :nth-child(5) {
+        display: none;
+    }
+}

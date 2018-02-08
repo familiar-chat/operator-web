@@ -1,0 +1,17 @@
+.Host {
+    display       : flex;
+    align-items   : center;
+}
+
+.Host > :nth-child(1) {
+    font-size  : 0.85rem;
+    margin     : 4px 0px;
+    color      : #777;
+    white-space: nowrap
+}
+
+.Host > :nth-child(2) {
+    font-size : 1rem;
+    color     : rgba(0, 0, 0, .87);
+    margin    : 0 12px;
+}

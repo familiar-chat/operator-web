@@ -1,0 +1,38 @@
+.Card {
+    display  : flex;
+    margin   : 30px auto;
+    width    : 820px;
+}
+
+.Card > :nth-child(2) {
+    min-width: 600px;
+}
+
+.SideBar {
+    background-color: #f0f0f0;
+    min-width       : 220px;
+}
+
+.SideBar > :nth-child(1) {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.List {
+    height       : min-content;
+    -webkit-flex : 1 0 auto;
+    -ms-flex     : 1 0 auto;
+    flex         : 1 0 auto;
+    color        : #666;
+}
+
+.Selected {
+    background-color: #039be5;
+    color           : white;
+}
+
+.Content {
+    flex-grow: 1
+}
