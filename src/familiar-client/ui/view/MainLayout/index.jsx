@@ -442,6 +442,8 @@ export default class extends React.Component {
                 )
         }
 
+        console.log(getCurrentUserId(), "getCurrentUserId")
+        console.log(getCurrentOrganizationId(), "getCurrentOrganizationId()")
 
         if(getCurrentUserId() == undefined || getCurrentOrganizationId() == undefined)
             return null
