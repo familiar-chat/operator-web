@@ -32,8 +32,7 @@ export default ({
                 <span>{"</Body>"}</span>タグの直前に以下のコードを挿入してください。
             </p>
             <Aside>
-                // TODO url
-                {'<script src="https://example.com/visitor/widget/main.js?account_id=' + getCurrentOrganizationId() + '"></script>'}
+                {'<script src="https://familiar-chat.firebaseapp.com/visitor/widget/main.js?account_id=' + getCurrentOrganizationId() + '"></script>'}
             </Aside>
         </div>
         <FABSpace/>
